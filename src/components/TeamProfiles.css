@@ -1,0 +1,76 @@
+/* Team profiles section */
+.team-profiles {
+    text-align: center; /* Center align text within the section */
+    padding: 20px; /* Padding for better spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center all profile cards horizontally */
+    flex-wrap: wrap; /* Ensure cards wrap to the next line on smaller screens */
+    gap: 20px; /* Add space between profile cards */
+  }
+  
+  /* Team heading styles */
+  .team-heading {
+    text-align: center; /* Center the text horizontally */
+    font-size: 2rem; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+    width: 100%; /* Make the heading take full width */
+  }
+   
+  
+  /* Profile card styling */
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the card */
+    justify-content: space-between;
+    margin: 15px; /* Space between cards */
+    padding: 15px; /* Padding within the card */
+    border: 1px solid #ccc; /* Border for the card */
+    border-radius: 10px; /* Rounded corners */
+    width: 180px; /* Fixed width for uniformity */
+    height: 260px; /* Fixed height for uniformity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #fff; /* White background */
+    overflow: hidden; /* Prevent overflow of content */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Profile image styling */
+  .profile-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular profile image */
+    object-fit: cover; /* Ensure image is cropped to fit within the circle */
+    margin-bottom: 10px;
+  }
+  
+  /* Profile name styling */
+  .profile-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    white-space: nowrap; /* Prevent wrapping of long names */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for long names */
+    max-width: 100%;
+  }
+  
+  /* Profile role styling */
+  .profile-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .profile-card {
+      width: 200px; /* Slightly larger cards on larger screens */
+      height: 280px;
+    }
+  }
+  

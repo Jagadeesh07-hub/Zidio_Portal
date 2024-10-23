@@ -1,0 +1,86 @@
+.home {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .home-content {
+    margin-bottom: 40px;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Expertise Section */
+  .image-gallery {
+    display: flex;
+    justify-content: space-between; /* Distribute the cards evenly */
+    align-items: flex-start;
+    gap: 20px; /* Adds space between cards */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Ensure the cards stack on smaller screens */
+  }
+  
+  .extra-image {
+    width: 600px; /* Increase the width to make the image bigger */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add some space above the image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+  }
+  
+  
+  .gallery-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for 3D effect */
+    width: 100%;
+    max-width: 300px; /* Ensures cards don’t exceed 300px width */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-10px); /* Cards lift on hover */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image container */
+    object-fit: contain; /* Ensure the full image is displayed inside the container */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0; /* Optional: Background to fill empty space if image has different aspect ratio */
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1); /* Return to original size on hover */
+  }
+  
+  .gallery-item p {
+    font-size: 1rem;
+    color: #333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .image-gallery {
+      flex-direction: column;
+      gap: 20px; /* Cards stack vertically on smaller screens */
+    }
+  }
+  

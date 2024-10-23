@@ -1,0 +1,25 @@
+.meet-the-team {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center; /* Center the text inside the section */
+  }
+  
+  .meet-the-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Ensure the heading is centered */
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center; /* Center the video */
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 800px; /* Restrict the width of the iframe */
+    height: 450px;
+    border: none; /* Remove any borders */
+  }
+  
